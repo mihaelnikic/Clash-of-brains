@@ -1,5 +1,10 @@
 # Clash-of-brains
 
+![](assets/resized/asset_4.png)
+![](assets/resized/asset_5.png)
+![](assets/resized/asset_6.png)
+---
+
 ## O igri
 * Single-Player
     * Igrač nastoji što više pitanja točno odgovoriti zaredom čime povisuje svoje bodove
@@ -38,10 +43,6 @@
 * Pitanja bazirana na slici s pripadajućim ponuđenim odgovorima
 * Pitanja bazirana na odabiru tražene lokacije pomoću Google Maps 
 
-
-![](assets/resized/asset_4.png)
-![](assets/resized/asset_5.png)
-![](assets/resized/asset_6.png)
 
 ## High score
 * Mogućnost pregleda poretka bodova s odgovarajućim imenima
