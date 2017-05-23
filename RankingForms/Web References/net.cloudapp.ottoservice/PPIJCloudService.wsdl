@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PPIJCloudService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://ottoservice.cloudapp.net/PPIJCloudService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://ottoservice.cloudapp.net/PPIJCloudService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ottoservice.cloudapp.net/PPIJCloudService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PPIJServiceWebRole" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPPIJCloudService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetPitanjeByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPitanjeByID" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetPitanjeByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPitanjeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetMapaOdgovorByIDpitanja_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapaOdgovorByIDpitanja" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetMapaOdgovorByIDpitanja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapaOdgovorByIDpitanjaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetSlikaOdgovorByIDpitanja_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSlikaOdgovorByIDpitanja" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetSlikaOdgovorByIDpitanja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSlikaOdgovorByIDpitanjaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetTekstOdgovorByIDpitanja_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTekstOdgovorByIDpitanja" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetTekstOdgovorByIDpitanja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTekstOdgovorByIDpitanjaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetPitanjaByIDkategorije_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPitanjaByIDkategorije" />
+  </wsdl:message>
+  <wsdl:message name="IPPIJCloudService_GetPitanjaByIDkategorije_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPitanjaByIDkategorijeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPPIJCloudService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetData" message="tns:IPPIJCloudService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetDataResponse" message="tns:IPPIJCloudService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetDataUsingDataContract" message="tns:IPPIJCloudService_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetDataUsingDataContractResponse" message="tns:IPPIJCloudService_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPitanjeByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetPitanjeByID" message="tns:IPPIJCloudService_GetPitanjeByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetPitanjeByIDResponse" message="tns:IPPIJCloudService_GetPitanjeByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMapaOdgovorByIDpitanja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetMapaOdgovorByIDpitanja" message="tns:IPPIJCloudService_GetMapaOdgovorByIDpitanja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetMapaOdgovorByIDpitanjaResponse" message="tns:IPPIJCloudService_GetMapaOdgovorByIDpitanja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSlikaOdgovorByIDpitanja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetSlikaOdgovorByIDpitanja" message="tns:IPPIJCloudService_GetSlikaOdgovorByIDpitanja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetSlikaOdgovorByIDpitanjaResponse" message="tns:IPPIJCloudService_GetSlikaOdgovorByIDpitanja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTekstOdgovorByIDpitanja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetTekstOdgovorByIDpitanja" message="tns:IPPIJCloudService_GetTekstOdgovorByIDpitanja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetTekstOdgovorByIDpitanjaResponse" message="tns:IPPIJCloudService_GetTekstOdgovorByIDpitanja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPitanjaByIDkategorije">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPPIJCloudService/GetPitanjaByIDkategorije" message="tns:IPPIJCloudService_GetPitanjaByIDkategorije_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPPIJCloudService/GetPitanjaByIDkategorijeResponse" message="tns:IPPIJCloudService_GetPitanjaByIDkategorije_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPPIJCloudService" type="tns:IPPIJCloudService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPitanjeByID">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetPitanjeByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMapaOdgovorByIDpitanja">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetMapaOdgovorByIDpitanja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSlikaOdgovorByIDpitanja">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetSlikaOdgovorByIDpitanja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTekstOdgovorByIDpitanja">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetTekstOdgovorByIDpitanja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPitanjaByIDkategorije">
+      <soap:operation soapAction="http://tempuri.org/IPPIJCloudService/GetPitanjaByIDkategorije" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PPIJCloudService">
+    <wsdl:port name="BasicHttpBinding_IPPIJCloudService" binding="tns:BasicHttpBinding_IPPIJCloudService">
+      <soap:address location="http://ottoservice.cloudapp.net/PPIJCloudService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

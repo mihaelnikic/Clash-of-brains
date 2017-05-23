@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100"
+    android:background="@drawable/forme">
+    <TextView
+        android:text="Odaberi kategoriju"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:textSize="30sp"
+        android:fontFamily="Elephant"
+        android:gravity="center"
+        android:id="@+id/textOdaberiKategoriju"
+        android:typeface="normal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/linearLayoutChoiceMenu">
+        <Button
+            android:text="Kategorija 1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/buttonCategory1"
+            android:background="@drawable/buttonOrange"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+        <Button
+            android:text="Kategorija 2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/buttonCategory2"
+            android:background="@drawable/buttonGreen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:weightSum="100"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:id="@+id/linearLayoutChoiceMenu2">
+        <Button
+            android:text="Kategorija 3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/buttonCategory3"
+            android:background="@drawable/buttonYellow"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+        <Button
+            android:text="Kategorija 4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/buttonCategory4"
+            android:background="@drawable/buttonBlue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <TextView
+        android:text="#Pitanje :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewPitanjeBrTitle" />
+    <TextView
+        android:text="[p]"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewPitanjeBr" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleListChoiceMenu" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/myListViewChoiceMenu"
+        android:gravity="center" />
+</LinearLayout>

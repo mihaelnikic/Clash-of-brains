@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pitanja"
+    android:weightSum="100">
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:name="com.google.android.gms.maps.MapFragment" />
+    <Button
+        android:text="ZATVORI"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/buttonMapsClose"
+        android:background="#548235"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+</LinearLayout>

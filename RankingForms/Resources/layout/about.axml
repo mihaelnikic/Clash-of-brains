@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100"
+    android:background="@drawable/forme">
+    <TextView
+        android:text="O igri"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:textSize="30sp"
+        android:fontFamily="Elephant"
+        android:gravity="center"
+        android:id="@+id/textAboutTitle"
+        android:typeface="normal" />
+    <TextView
+        android:text="About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us About us"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAboutUs" />
+</LinearLayout>

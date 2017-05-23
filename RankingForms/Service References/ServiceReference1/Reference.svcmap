@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e8a34649-b710-4c5b-98c2-2b13331900b7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ottoservice.cloudapp.net/PPIJCloudService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PPIJCloudService.disco" MetadataType="Disco" ID="45a440d0-4c2e-45f2-80da-eb330ed955a7" SourceId="1" SourceUrl="http://ottoservice.cloudapp.net/PPIJCloudService.svc?disco" />
+    <MetadataFile FileName="PPIJCloudService.wsdl" MetadataType="Wsdl" ID="eba1e2b5-6816-43d8-ae87-b7b2f3523cae" SourceId="1" SourceUrl="http://ottoservice.cloudapp.net/PPIJCloudService.svc?wsdl" />
+    <MetadataFile FileName="PPIJCloudService.xsd" MetadataType="Schema" ID="17a11914-33d4-4132-9884-21852517ac10" SourceId="1" SourceUrl="http://ottoservice.cloudapp.net/PPIJCloudService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PPIJCloudService1.xsd" MetadataType="Schema" ID="ae3ce2bd-2145-4736-bf48-a07372f6e169" SourceId="1" SourceUrl="http://ottoservice.cloudapp.net/PPIJCloudService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PPIJCloudService2.xsd" MetadataType="Schema" ID="652a3d3a-bae2-4560-854c-189484078d36" SourceId="1" SourceUrl="http://ottoservice.cloudapp.net/PPIJCloudService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

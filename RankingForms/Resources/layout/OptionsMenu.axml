@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100"
+    android:background="@drawable/pitanja">
+    <TextView
+        android:text="Opcije"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:textSize="30sp"
+        android:fontFamily="Elephant"
+        android:gravity="center"
+        android:id="@+id/textOptionTitle"
+        android:typeface="normal" />
+    <TextView
+        android:text="Tema : "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:textSize="20sp"
+        android:fontFamily="Elephant"
+        android:id="@+id/textOptionTema"
+        android:typeface="normal" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupTema">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CoolBlack"
+            android:id="@+id/radioButtonTemaCoolBlack" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aqua"
+            android:id="@+id/radioButtonTemaAqua" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reddish"
+            android:id="@+id/radioButtonTemaReddish" />
+    </RadioGroup>
+    <TextView
+        android:text="Broj pitanja (mp i practice) : "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:textSize="20sp"
+        android:fontFamily="Elephant"
+        android:id="@+id/textOptionBrojPitanja"
+        android:typeface="normal" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupBrojPitanja">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="10"
+            android:id="@+id/radioButtonBrojPitanja10" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/radioButtonBrojPitanja20" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:id="@+id/radioButtonBrojPitanja25" />
+    </RadioGroup>
+    <Button
+        android:text="AŽURIRAJ PROMJENE"
+        android:layout_width="match_parent"
+        android:layout_weight="15"
+        android:layout_height="0dp"
+        android:id="@+id/buttonOptionAzuriraj"
+        android:background="@drawable/buttonRed"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+    <Button
+        android:text="NAZAD NA MENI"
+        android:layout_width="match_parent"
+        android:layout_weight="15"
+        android:layout_height="0dp"
+        android:id="@+id/buttonOptionBackMenu"
+        android:background="@drawable/buttonBlue"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+</LinearLayout>

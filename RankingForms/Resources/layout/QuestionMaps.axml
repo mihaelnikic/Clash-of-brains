@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100"
+    android:background="@drawable/pitanja">
+    <TextView
+        android:text="15"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textQuestionMapsTimer" />
+    <Button
+        android:text="Naslov"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="91dp"
+        android:id="@+id/buttonQuestionMapsTitle"
+        android:background="@drawable/buttonBlue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:clickable="false" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:id="@+id/linearLayoutQuestionMaps">
+        <Button
+            android:text="Otvori mapu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonQuestionMapsOtvori"
+            android:background="@drawable/buttonBlue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/rsz_maps2" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:id="@+id/linearLayoutQuestionMaps2">
+        <Button
+            android:text="Zaključaj odgovor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonQuestionMapsZakljucaj"
+            android:background="@drawable/buttonBlue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <TextView
+        android:text="Tehnologija"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:id="@+id/textQuestionMapsCategory" />
+</LinearLayout>

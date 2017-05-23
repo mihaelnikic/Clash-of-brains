@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100"
+    android:background="@drawable/forme">
+    <TextView
+        android:text="Stvorite popis igrača"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:textSize="22sp"
+        android:fontFamily="Elephant"
+        android:gravity="center"
+        android:id="@+id/textPlayerChooseTitle"
+        android:typeface="normal" />
+    <TextView
+        android:text="Igrači : "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlePlayerChooseLocal"
+        android:typeface="normal" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/PlayerChooseList"
+        android:gravity="center" />
+    <Button
+        android:text="+ DODAJ IGRAČA"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/buttonAddPlayerLocal"
+        android:background="@drawable/buttonOrange"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+    <Button
+        android:text="ZAPOČNI IGRU"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/buttonStartGameLocal"
+        android:background="@drawable/buttonGreen"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+</LinearLayout>

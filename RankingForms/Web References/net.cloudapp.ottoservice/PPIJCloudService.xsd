@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PPIJServiceWebRole" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PPIJServiceWebRole" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CompositeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BoolValue" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StringValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+  <xs:complexType name="Pitanje">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_kategorije" type="xs:int" />
+      <xs:element minOccurs="0" name="id_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="id_pitanja" type="xs:int" />
+      <xs:element minOccurs="0" name="id_tipa_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="opis_podrucja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="slika_pitanja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tekst_pitanja" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pitanje" nillable="true" type="tns:Pitanje" />
+  <xs:complexType name="MapaOdgovor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drzava" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="id_pitanja" type="xs:int" />
+      <xs:element minOccurs="0" name="id_tipa_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="koordinata_x" type="xs:double" />
+      <xs:element minOccurs="0" name="koordinata_y" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MapaOdgovor" nillable="true" type="tns:MapaOdgovor" />
+  <xs:complexType name="SlikaOdgovor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="broj_tocnog_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="id_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="id_pitanja" type="xs:int" />
+      <xs:element minOccurs="0" name="id_tipa_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="slika_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="slika_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="slika_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="slika_4" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SlikaOdgovor" nillable="true" type="tns:SlikaOdgovor" />
+  <xs:complexType name="TekstOdgovor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="broj_tocnog_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="id_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="id_pitanja" type="xs:int" />
+      <xs:element minOccurs="0" name="id_tipa_odgovora" type="xs:int" />
+      <xs:element minOccurs="0" name="tekst_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tekst_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tekst_3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tekst_4" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TekstOdgovor" nillable="true" type="tns:TekstOdgovor" />
+</xs:schema>

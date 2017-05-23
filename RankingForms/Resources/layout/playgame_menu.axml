@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100"
+    android:background="@drawable/forme">
+    <TextView
+        android:text="Odaberite način igre"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:textSize="30sp"
+        android:fontFamily="Elephant"
+        android:gravity="center"
+        android:id="@+id/textSinMultPrac"
+        android:typeface="normal" />
+    <TextView
+        android:text="Učitavam..."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProgressBar"
+        android:visibility="invisible" />
+    <Button
+        android:text="SINGLE-PLAYER"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/buttonSinglePlayerChoose"
+        android:background="@drawable/buttonPurple"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+    <Button
+        android:text="MULTI-PLAYER"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/buttonMultiplayerChoose"
+        android:background="@drawable/buttonGreen"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+    <Button
+        android:text="PRAKTICIRAJ"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/buttonPracticeChoose"
+        android:background="@drawable/buttonYellow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff" />
+</LinearLayout>

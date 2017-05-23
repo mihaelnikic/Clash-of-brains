@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp">
+    <TextView
+        android:text="Pozicija"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:id="@+id/textPosition"
+        android:textSize="20sp" />
+    <TextView
+        android:text="Naziv igraca"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:id="@+id/textPlayerName"
+        android:textSize="20sp" />
+    <TextView
+        android:text="Ukupni rezultat"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:gravity="center"
+        android:id="@+id/textTotalScore"
+        android:textSize="20sp" />
+</LinearLayout>
