@@ -13,18 +13,6 @@
 
 ## Kategorije pitanja
 
-
-|  Kategorija |  Boja |
-|:--------:|:-------------:|:-----:|
-| Znanost  | <span style="color:purple">Ljubičasta</span>  |
-| Zabava  | <span style="color:#FFD801">Žuta</span>  |
-| Tehnologija  | <span style="color:blue">Plava</span>  |
-| Zemljopis | <span style="color:green">Zelena</span>  |
-| Umjetnost  | <span style="color:red">Crvena</span>  |
-| Povijest  |  <span style="color:orange">Narančasta</span> |
-
-
-
 | Kategorija         | Boja           |
 | ------------- |:-------------:| 
 | Znanost  | <span style="color:purple">Ljubičasta</span>  |
