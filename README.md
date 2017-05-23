@@ -24,6 +24,13 @@
 | Povijest  |  <span style="color:orange">Narančasta</span> |
 
 
+
+|  Kategorija |  Boja |
+|:--------:|:-------------:|:-----:|
+| Znanost  | nesto  |
+
+
+
 ![](assets/resized/asset_2.png)
 
 ## Pitanja
