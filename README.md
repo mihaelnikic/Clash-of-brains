@@ -27,12 +27,12 @@
 
 | Kategorija         | Boja           |
 | ------------- |:-------------:| 
-| Znanost      | right-aligned | 
-| Zabava     | centered      |   
-| Tehnologija | are neat      | 
-| Zemljopis | are neat      | 
-| Umjetnost | are neat      | 
-| Povijest | are neat      | 
+| Znanost  | <span style="color:purple">Ljubičasta</span>  |
+| Zabava  | <span style="color:#FFD801">Žuta</span>  |
+| Tehnologija  | <span style="color:blue">Plava</span>  |
+| Zemljopis | <span style="color:green">Zelena</span>  |
+| Umjetnost  | <span style="color:red">Crvena</span>  |
+| Povijest  |  <span style="color:orange">Narančasta</span> |
 
 
 
