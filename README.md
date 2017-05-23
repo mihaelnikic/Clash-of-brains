@@ -1,6 +1,6 @@
 # Clash-of-brains
 
-![](assets/asset_1.jpg =250x)
+<img src="drawing.jpg" alt="Drawing" style="width: 200px;"/>
 ![](assets/asset_2.png)
 ![](assets/asset_3.png)
 ![](assets/asset_4.png)
